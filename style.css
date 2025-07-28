@@ -279,6 +279,11 @@ body {
   margin: 10px;
   gap: 10px;
 }
+@media (max-width: 768px) {
+  .hero__title {
+    font-size: 44px;
+  }
+}
 @media (max-width: 375px) {
   .hero__title {
     font-size: 38px;
@@ -300,8 +305,13 @@ body {
 }
 .hero__line {
   width: 10px;
-  height: 10%;
+  height: 25%;
   margin-left: 64px;
+}
+@media (max-width: 768px) {
+  .hero__line {
+    margin-left: 32px;
+  }
 }
 @media (max-width: 375px) {
   .hero__line {
@@ -310,6 +320,11 @@ body {
 }
 .hero__subtitle {
   font-size: 32px;
+}
+@media (max-width: 768px) {
+  .hero__subtitle {
+    font-size: 24px;
+  }
 }
 @media (max-width: 375px) {
   .hero__subtitle {
@@ -1114,6 +1129,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-family: Lato;
+}
+@media (max-width: 375px) {
+  .cart {
+    padding: 30px 0;
+  }
 }
 .cart__title {
   font-size: 24px;
@@ -1122,6 +1143,11 @@ body {
   color: #d94b64;
   text-transform: uppercase;
   text-align: left;
+}
+@media (max-width: 375px) {
+  .cart__title {
+    text-align: center;
+  }
 }
 .cart__content {
   display: -webkit-box;
@@ -1228,7 +1254,7 @@ body {
       flex-wrap: wrap;
 }
 .cart__button {
-  padding: 12px 24px;
+  padding: 12px 18px;
   font-size: 14px;
   border: 1px solid #333;
   background: none;
@@ -1259,8 +1285,8 @@ body {
   gap: 15px;
 }
 .cart__checkout-title {
-  font-weight: bold;
-  font-size: 18px;
+  font-weight: lighter;
+  font-size: 16px;
   margin-bottom: 10px;
 }
 .cart__input {
@@ -1278,12 +1304,23 @@ body {
   cursor: pointer;
 }
 .cart__checkout-button--get {
-  background-color: #a4a4a4;
-  color: #333;
+  color: #a4a4a4;
+  max-width: 101px;
+  font-size: 11px;
+  border: 1px solid #a4a4a4;
+  background-color: #fff;
 }
 .cart__checkout-button--main {
   background-color: #d94b64;
   color: #fff;
+  font-family: Lato;
+  font-weight: lighter;
+  font-size: 16px;
+  display: block;
+  margin: 20px auto 6px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .cart__checkout-button--main:hover {
   background-color: #c43f57;
@@ -1292,6 +1329,7 @@ body {
   font-size: 14px;
   margin-top: 10px;
   background-color: #f5f3f3;
+  padding: 33px;
 }
 .cart__totals span {
   font-weight: bold;
@@ -1301,6 +1339,10 @@ body {
   font-size: 16px;
   font-weight: bold;
   margin-top: 10px;
+  text-align: right;
+}
+.cart__sub-total {
+  text-align: right;
 }
 
 /*FOOTER*/

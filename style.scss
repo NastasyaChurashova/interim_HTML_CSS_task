@@ -211,6 +211,9 @@ body {
 		color: #000;
 		margin: 10px;
 		gap: 10px;
+		@media (max-width: 768px) {
+			font-size: 44px;
+		}
 		@media (max-width: 375px) {
 			font-size: 38px;
 			position: relative;
@@ -231,14 +234,20 @@ body {
 	}
 	&__line {
 		width: 10px;
-		height: 10%;
+		height: 25%;
 		margin-left: 64px;
+		@media (max-width: 768px) {
+			margin-left: 32px;
+		}
 		@media (max-width: 375px) {
 			display: none;
 		}
 	}
 	&__subtitle {
 		font-size: 32px;
+		@media (max-width: 768px) {
+			font-size: 24px;
+		}
 		@media (max-width: 375px) {
 			font-size: 20px;
 		}
@@ -936,7 +945,10 @@ body {
 .cart {
 	padding: 60px 0;
 	display: flex;
-
+	font-family: Lato;
+	@media (max-width: 375px) {
+		padding: 30px 0;
+	}
 	&__title {
 		font-size: 24px;
 		font-weight: 600;
@@ -944,6 +956,9 @@ body {
 		color: #d94b64;
 		text-transform: uppercase;
 		text-align: left;
+		@media (max-width: 375px) {
+			text-align: center;
+		}
 	}
 
 	&__content {
@@ -1031,7 +1046,7 @@ body {
 	}
 
 	&__button {
-		padding: 12px 24px;
+		padding: 12px 18px;
 		font-size: 14px;
 		border: 1px solid #333;
 		background: none;
@@ -1059,8 +1074,8 @@ body {
 	}
 
 	&__checkout-title {
-		font-weight: bold;
-		font-size: 18px;
+		font-weight: lighter;
+		font-size: 16px;
 		margin-bottom: 10px;
 	}
 
@@ -1080,13 +1095,22 @@ body {
 		cursor: pointer;
 
 		&--get {
-			background-color: #a4a4a4;
-			color: #333;
+			color: #a4a4a4;
+			max-width: 101px;
+			font-size: 11px;
+			border: 1px solid #a4a4a4;
+			background-color: #fff;
 		}
 
 		&--main {
 			background-color: #d94b64;
 			color: #fff;
+			font-family: Lato;
+			font-weight: lighter;
+			font-size: 16px;
+			display: block;
+			margin: 20px auto 6px;
+			width: fit-content;
 
 			&:hover {
 				background-color: #c43f57;
@@ -1098,6 +1122,7 @@ body {
 		font-size: 14px;
 		margin-top: 10px;
 		background-color: #f5f3f3;
+		padding: 33px;
 
 		span {
 			font-weight: bold;
@@ -1109,6 +1134,10 @@ body {
 		font-size: 16px;
 		font-weight: bold;
 		margin-top: 10px;
+		text-align: right;
+	}
+	&__sub-total {
+		text-align: right;
 	}
 }
 
